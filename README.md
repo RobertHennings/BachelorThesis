@@ -6,7 +6,7 @@ The thesis was finally graded 1.3 in the german grade ranking system which is eq
 The main paper from Ľuboš Pástor and Robert F. Stambaugh describing the method can be found [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=279804). 
 
 # The procedure and thesis in short
-The focus of this paper is to analyse whether liquidity risk itself, and under what con- ditions, can be empirically proven to be a systematic risk factor in US capital market returns. It is shown whether a conceptualised liquidity risk factor should be consid- ered in future multifactor models to explain stock returns. The relationship between stock price and measurement concept to aggregate total market liquidity is analysed in more detail.
+The focus of this paper is to analyse whether liquidity risk itself, and under what conditions, can be empirically proven to be a systematic risk factor in US capital market returns. It is shown whether a conceptualised liquidity risk factor should be considered in future multifactor models to explain stock returns. The relationship between stock price and measurement concept to aggregate total market liquidity is analysed in more detail.
 
 Definition of liquidity
 Since the concept of liquidity depends on the application in various ways and is therefore first defined more precisely in order to be able to refer to it in the further course of the work.
@@ -24,9 +24,9 @@ Market liquidity, as one of the main types of liquidity mentioned above, which i
 - Immediate order execution ("fast")
 - Order size ("large volumes")
 
-In order to enable a better assessability of these characteristics, they are formulated as components of transaction costs.31 Market liquidity can be understood as the trad- ing cost of a securities transaction in the capital market, relative to its fair value. 
+In order to enable a better assessability of these characteristics, they are formulated as components of transaction costs. Market liquidity can be understood as the trading cost of a securities transaction in the capital market, relative to its fair value. 
 Total transaction costs comprise four components: The price effect PI(q), the search costs S(q), the delay costs D(q) and the direct trade costs TC(q).
-In sum, the com- ponents represent the market liquidity of a security as follows:
+In sum, the components represent the market liquidity of a security as follows:
 
 <p align="center">
   <img src="https://github.com/RobertHennings/BachelorThesis/blob/main/Figures/EquationTransactionCosts.png" 
@@ -53,7 +53,7 @@ The depth of a market is determined by the presence of both limited buy and sell
        width=600"/>
 </p>
 
-All four dimensions together fully represent market liquidity. Measurement concepts that are to measure market liquidity must be able to depict it sufficiently. Structural components of the market set-up, such as market organisation forms and market microstructures, which have a significant influence on the interaction of the four di- mensions, will not be discussed further due to the focus of the paper.
+All four dimensions together fully represent market liquidity. Measurement concepts that are to measure market liquidity must be able to depict it sufficiently. Structural components of the market set-up, such as market organisation forms and market microstructures, which have a significant influence on the interaction of the four dimensions, will not be discussed further due to the focus of the paper.
 
 # Delineation of the concept of risk: liquidity - characteristics, risk factor and premium
 On the capital market, a distinction is made between systematic and unsystematic, i.e. idiosyncratic, risk according to CAPM considerations.
@@ -147,8 +147,3 @@ The recalculated returns of the following 12 months of these portfolio constella
 </p>
 
 With the parameters 𝑟 as the excess return oft he stock 𝑖, 𝑀𝐾𝑇 (Market) as the excess return above the market index, 𝑆𝑀𝐵 (Small minus Big) and 𝐻𝑀𝐿 (High minus Low) as the excess return between sorted portfolios based on market capitalisation and the book to market value ratio.
-
-
-
-
-
