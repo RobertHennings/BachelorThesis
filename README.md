@@ -19,6 +19,7 @@ A distinction is made between three main types of liquidity:
 
 Market liquidity is understood as the ability to trade large volumes quickly, at low cost and without price movements in the market. Depending on the market environment, there are shifts in the relevance of characterising properties of liquidity. All characterising parameters are time-variable. In times of high financial market stability, transaction costs appear to be highly relevant, whereas in times of crisis rapid equilibrium price discovery through the mapping of new information appears to be the main feature.
 Market liquidity, as one of the main types of liquidity mentioned above, which is the subject of this analysis, is characterised by three main features:
+
 - Price stability ("without price movements")
 - Immediate order execution ("fast")
 - Order size ("large volumes")
