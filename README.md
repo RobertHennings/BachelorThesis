@@ -104,7 +104,7 @@ Adjusting the measure for inflation:
 
 <p align="center">
   <img src="https://github.com/RobertHennings/BachelorThesis/blob/main/Figures/InflationAdjusting.png" 
-       width=100"/>
+       width=80"/>
 </p>
 
 with the parameter 𝑚t, as the market value of all in the month 𝑡 in the average included stocks 𝑖 at the end of the month 𝑡 − 1 in USD and 𝑚1, as the corresponding market value in the first month of the data basis, i.e. here August 1962.
@@ -127,7 +127,7 @@ These residuals, scaled by 100 𝑢t, form the time series of changes in total m
 
 <p align="center">
   <img src="https://github.com/RobertHennings/BachelorThesis/blob/main/Figures/LiquidityIndex.png" 
-       width=130"/>
+       width=110"/>
 </p>
 
 # Interpretation of the Liquidity Gamma Index
