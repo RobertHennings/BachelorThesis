@@ -5,3 +5,6 @@ In this folder there can be found three Excel files from the screening. The scre
 
 2) Folder Delisted Equity: 
 In this folder there can be found three Excel files from the screening. The screening had to be split up by market cap because EIKON allowed only around                       5000 data points to be downloaded at once. One Excel file contains all the files combined in one big version and only the tickers of the subsuming overview file are saved as .csv.
+
+3) PastorAndStambaughEditedData.csv:
+Holds the Pastor and Stambaugh data on the liquidity index and portfolio returns. This file was taken from their personal website where an updated version can be found.
