@@ -12,3 +12,6 @@ Holds the Pastor and Stambaugh data on the liquidity index and portfolio returns
 4) ReturnsOnDecilePortfoliosSortedOnHistoricalLiquidityBetas.csv:
 This file holds the returns of the decile portfolios that were sorted based on their historical liquidity beta.
 This file was taken from their personal website where an updated version can be found.
+
+5) F-F_Research_Data_Factors.csv:
+This file holds the famous Fama and French Returns of the three factor model, that serves as a check, if the liquidity risk is already incorporated in one of the included factors or wether it is a new factor.
