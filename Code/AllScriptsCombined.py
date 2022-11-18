@@ -57,6 +57,8 @@ class LoadEikonData():
         import glob
         #inspect the provided path and load all .csv files in it in a dataframe
         all_files = glob.glob(path_read + "/*.csv")
+        
+        print(f"There are {len(all_files)} .csv files in the provided path.")
         #adding an error list in which we will save tickers where we got an error loading the data
         error_list = []
         #Set up the initial dataframe which has the longest possible daterange 
