@@ -8,3 +8,7 @@ In this folder there can be found three Excel files from the screening. The scre
 
 3) PastorAndStambaughEditedData.csv:
 Holds the Pastor and Stambaugh data on the liquidity index and portfolio returns. This file was taken from their personal website where an updated version can be found.
+
+4) ReturnsOnDecilePortfoliosSortedOnHistoricalLiquidityBetas.csv:
+This file holds the returns of the decile portfolios that were sorted based on their historical liquidity beta.
+This file was taken from their personal website where an updated version can be found.
