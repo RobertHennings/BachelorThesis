@@ -24,6 +24,27 @@ class LoadEikonData():
         
         
     def LoadFromTickerList(self,ticker_list, path_save, start_date, end_date, frequency):
+        """
+        
+
+        Parameters
+        ----------
+        ticker_list : TYPE list
+            The Eikon RIC Ticker list, for which historical time series should be loaded and saved.
+        path_save : TYPE string
+            The file path wher the single timeseries files should be saved in.
+        start_date : TYPE string
+            The starting date from which on to load the historical timeseries from Eikon.
+        end_date : TYPE string
+            The end date from which to load the historical timeseries from Eikon.
+        frequency : TYPE string
+            The data frequency to load, "d" for daily series.
+
+        Returns
+        -------
+        Single Timeseries files named: <RIC_Ticker>_Timeseries.csv saved in the provided file path.
+
+        """
         import eikon as ek
         import pandas as pd
         #set api ket to use
@@ -53,6 +74,27 @@ class LoadEikonData():
         
         
     def CreateMasterDF(path_read, start_date, end_date, amount_to_load):
+        """
+        
+
+        Parameters
+        ----------
+        path_read : TYPE string
+            The path where the single .csv Timeseries files are stored, to read into the master dataframe.
+        start_date : TYPE string
+            To create the master dataframe we need to give it a DatetimeIndex that needs a starting point. Set the starting point here.
+        end_date : TYPE string
+            To create the master dataframe we need to give it a DatetimeIndex that needs an ending point. Set the starting point here.
+        amount_to_load : TYPE int
+            Define how many of the single .csv Timeseries files should be processed at once. Be careful to not set it too high, as 
+            the file size can grow very large very fast.
+
+        Returns
+        -------
+        df_initial : TYPE pd.DataFrame
+            The created master dataframe that merged all the single .csv Timeseries files with all their included columns into one big frame.
+
+        """
         import pandas as pd
         import glob
         #inspect the provided path and load all .csv files in it in a dataframe
@@ -95,6 +137,9 @@ class LoadEikonData():
 t = LoadEikonData.CreateMasterDF(path_read = r"/Users/Robert_Hennings/Library/CloudStorage/OneDrive-stud.uni-duisburg-essen.de/BA/Gesamtmarkt USA/full_history",
                    start_date = "1900/1/1",
                    end_date = "2022/1/1",
-                   amount_to_load = 5)
+                   amount_to_load = 1000)
     
 #all that is left to do is to combine all the single files to one big dataframe in single periods of 1000s
+#first 1000 tickers are loaded and saved into a file
+t.to_pickle("/Users/Robert_Hennings/Dokumente/Uni/Bachelor/Bachelorarbeit/FirstThousandTickers.pkl")
+# amount_to_load was set to 1000
