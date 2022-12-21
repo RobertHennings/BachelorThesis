@@ -153,3 +153,10 @@ The recalculated returns of the following 12 months of these portfolio constella
 </p>
 
 With the parameters 𝑟 as the excess return oft he stock 𝑖, 𝑀𝐾𝑇 (Market) as the excess return above the market index, 𝑆𝑀𝐵 (Small minus Big) and 𝐻𝑀𝐿 (High minus Low) as the excess return between sorted portfolios based on market capitalisation and the book to market value ratio.
+
+# Github project replicating the above described procedure
+In this repository I try to reproduce the described methodology with the means at my disposal. This should also serve as a test for me to see how replicable academic results are. 
+
+1) Data and data preparation
+
+Since as a student I only have Thomson Reuters Eikon access, I first screened all US equity tickers that were listed on the American exchanges. All tickers ever listed were obtained (currently still tradable and delisted). In the next step, the maximum historical time series of the parameters Volume, Open, High, Low, Close, Adj Close on daily frequency were obtained for each ticker. This resulted in 8389 individual files in csv format. These individual csv files were then linked together into a master data frame with appropriate temporal matching of the DateTimeIndex. From this master dataframe, the column of Adj. Close and Volume were extracted for each company and the daily returns were calculated for the further procedure.  
