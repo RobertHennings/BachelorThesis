@@ -61,7 +61,8 @@ The depth of a market is determined by the presence of both limited buy and sell
 
 All four dimensions together fully represent market liquidity. Measurement concepts that are to measure market liquidity must be able to depict it sufficiently. Structural components of the market set-up, such as market organisation forms and market microstructures, which have a significant influence on the interaction of the four dimensions, will not be discussed further due to the focus of the paper.
 
-# Delineation of the concept of risk: liquidity - characteristics, risk factor and premium
+# 
+ineation of the concept of risk: liquidity - characteristics, risk factor and premium
 On the capital market, a distinction is made between systematic and unsystematic, i.e. idiosyncratic, risk according to CAPM considerations.
 The systematic part is accounted for by the sensitivity of equity returns to the returns of the broad market, which is modelled in the beta factor as a linear covariance relationship. 
 The expected return on shares is based on this systematic risk, as the relationship of the equations shows:
@@ -84,6 +85,7 @@ In this paper, we refer to the linear relationship between aggregate market liqu
 # Constructing the liquidity gamma index according to Pástor and Stambaugh
 
 1) Liquidity measurement at company level
+
 The liquidity ratio for share 𝑖 in the month 𝑡 is the Ordinary Least Squares (OLS) estimator of the regression coefficient 𝛾i,t of the regression equation:
 
 <p align="center">
@@ -100,6 +102,7 @@ With the parameters 𝑟 i,d,t as the excess return 𝑟e, i,d,t = 𝑟 i,d,t �
 </p>
 
 2) Liquidity measurement at overall market level
+
 From the share-specific liquidity measures, in total 𝑁 each month 𝑡, the total market level is aggregated to by taking the simple average:
 
 <p align="center">
@@ -123,7 +126,7 @@ In order to calculate the changes (innovations) in the total market liquidity ti
        width=250"/>
 </p>
 
-The computed delat △ 𝛾t is regressed on its previous value △ 𝛾t-1 and on the previous value of the scaled time series (𝑚t/𝑚1)*𝛾t-1:
+The computed delta △ 𝛾t is regressed on its previous value △ 𝛾t-1 and on the previous value of the scaled time series (𝑚t/𝑚1)*𝛾t-1:
 
 <p align="center">
   <img src="https://github.com/RobertHennings/BachelorThesis/blob/main/Figures/Delta.png" 
@@ -163,4 +166,7 @@ Since as a student I only have Thomson Reuters Eikon access, I first screened al
 
 # To Do List
 - [ ] Combine all feather files to one master dataframe, fix bugs in function, inspect error list
+- [ ] Loop through the single dataframes in the reg_list and compute for every month the market liquidity measure by taking the simple average
+- [ ] Adjust the index by the market value of all included stocks at that time 
+- [ ] Compute the innovations in liquidity  
 - [ ] Set up portfolio sorting and liquidity metric evaluation based on sorting
