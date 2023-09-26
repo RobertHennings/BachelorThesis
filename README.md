@@ -166,7 +166,7 @@ Since as a student I only have Thomson Reuters Eikon access, I first screened al
 
 # To Do List
 - [ ] Combine all feather files to one master dataframe, fix bugs in function, inspect error list
-- [ ] Loop through the single dataframes in the reg_list and compute for every month the market liquidity measure by taking the simple average
-- [ ] Adjust the index by the market value of all included stocks at that time 
+- [ ] Loop through the single dataframes in the reg_list and compute for every month the market liquidity measure by taking the simple average - see first step of Part 2)
+- [ ] Adjust the index by the market value of all included stocks at that time - see second step of Part 2)
 - [ ] Compute the innovations in liquidity  
 - [ ] Set up portfolio sorting and liquidity metric evaluation based on sorting
